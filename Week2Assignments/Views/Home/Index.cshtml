@@ -1,0 +1,13 @@
+﻿@model Week2Assignments.Models.Parks
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (Week2Assignments.Models.Park park in Model.data)
+{
+    @(park.parkCode + " " + park.fullName + " " + park.latLong)
+    <br />
+}
